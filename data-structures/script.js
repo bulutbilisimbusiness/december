@@ -196,3 +196,27 @@ rest1.owner &&= '<ANONYMOUS>';
 rest2.owner &&= '<ANONYMOUS>';
 console.log(rest1);
 console.log(rest2);
+
+const menuss = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menuss) console.log(item);
+
+for (const [i, el] of menuss.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+//console.log([...menuss.entries()]);
+
+const orderSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(orderSet);
+console.log(orderSet.size);
+console.log(new Set('Erhan'));
+
+console.log(orderSet.has('Pizza'));
+console.log(orderSet.has('Sushi'));
