@@ -31,3 +31,9 @@ console.log('Difference italian', uniqueItalianFoods);
 
 const uniqueMexicanFoods = mexicanFoods.difference(italianFoods);
 console.log('Difference mexican', uniqueMexicanFoods);
+
+const uniqueItalianAndMexicanFoods =
+  italianFoods.symmetricDifference(mexicanFoods);
+console.log('Symmetric difference', uniqueItalianAndMexicanFoods);
+
+console.log(italianFoods.isDisjointFrom(mexicanFoods));
